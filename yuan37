@@ -1,0 +1,62 @@
+<?php
+
+
+use yxdj\network\Stream;
+use yxdj\network\Cli;
+use yxdj\network\Fly;
+
+$root = __DIR__;
+
+require($root . '/lib/Stream.php');
+require($root . '/lib/Cli.php');
+require($root . '/lib/Fly.php');
+
+
+
+// 检测当前目录，获取应用配置
+$path = realpath('./');
+if (file_exists($path . '/yuan37.php')) {
+    
+    $argvs = $argv;
+    
+    // 取出第一个命令参数
+    $cmd = array_shift($argvs);
+    
+    // 命令外的第一个参数为路由
+    if (count($argvs) > 0) {
+        $route = array_shift($argvs);    
+    } else {
+        echo 'not input route';
+        exit;        
+    }
+    
+    //if ($argvs)
+    //echo $argc;exit;
+    
+    //print_r($argvs);exit;
+    
+    $params = Fly::getParams($argv, $argc);
+    
+    
+    Fly::run($cmd, $route, $params, $path);
+    
+
+
+    
+    
+    // $config = require($path . '/yuan37.php');
+} else {
+    echo 'not find current config file...';
+    exit;
+}
+
+
+
+
+
+
+
+
+function br(){
+    echo "\r\n";
+}

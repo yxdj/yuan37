@@ -1,1 +1,1 @@
-@php "%~dp0yuan37.php" %* 
+@php "%~dp0yuan37" %* 
