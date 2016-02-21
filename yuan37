@@ -47,7 +47,7 @@ if (file_exists($path . '/yuan37.php')) {
     
     // $config = require($path . '/yuan37.php');
 } else {
-    echo 'not find current config file...';
+    echo 'not find current config file...';br();
     exit;
 }
 
