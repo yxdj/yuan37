@@ -14,7 +14,7 @@ require($root . '/lib/Fly.php');
 
 
 
-// 检测当前目录，获取应用配置
+// 检测当前目录，获取应用配置aaa
 $path = realpath('./');
 if (file_exists($path . '/yuan37.php')) {
     
