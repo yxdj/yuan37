@@ -29,6 +29,7 @@ class Fly
     public static function run($cmd, $route, $params, $path)
     {
         $routes = explode('/', $route, 2);
+        print_r($routes);
         
         
     }
