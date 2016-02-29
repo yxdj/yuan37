@@ -58,3 +58,9 @@ if (file_exists($path . '/yuan37.php')) {
 function br(){
     echo "\r\n";
 }
+
+
+funciton test(){
+    echo 'dfadf';
+}
+
