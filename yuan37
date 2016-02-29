@@ -32,7 +32,7 @@ if (file_exists($path . '/yuan37.php')) {
     }
     
     //if ($argvs)
-    //echo $argc;exit;
+    //echo $argc;exit;  test
     
     //print_r($argvs);exit;
     
