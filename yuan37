@@ -60,7 +60,7 @@ function br(){
 }
 
 
-funciton test(){
+function test(){
     echo 'dfadf';
 }
 
