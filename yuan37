@@ -54,11 +54,7 @@ if (file_exists($path . '/yuan37.php')) {
 
 
 
-<<<<<<< HEAD
 // aaaaaaa
-=======
-// bbbbbbbb
->>>>>>> test
 
 
 
