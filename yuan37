@@ -54,11 +54,6 @@ if (file_exists($path . '/yuan37.php')) {
 
 
 
-// aaaaaaa
-// bbbbbbb
-// ccccccc
-
-
 function br(){
     echo "\r\n";
 }
