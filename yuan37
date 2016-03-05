@@ -27,7 +27,7 @@ if (file_exists($path . '/yuan37.php')) {
     if (count($argvs) > 0) {
         $route = array_shift($argvs);    
     } else {
-        echo 'not input route.';
+        echo 'not input route.';br();
         exit;        
     }
     
